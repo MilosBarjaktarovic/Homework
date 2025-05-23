@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-title {
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.fighters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.best-fighters {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.best-fighters:hover {
+  transform: scale(1.05);
+}
+
+.best-fighters img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.fighter {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.best-fighters p {
+  color: #555;
+  font-size: 16px;
+}
