@@ -1,0 +1,129 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.container {
+  background-image: url('../Predavanje_12/pictures/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 40px 20px 80px;
+}
+
+.main-title {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cars-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cars-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.car-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.car-card p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 0 5px;
+  color: #333;
+}
+
+.float-up {
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.float-down {
+  animation: floatDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+footer {
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .cars-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .cars-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
