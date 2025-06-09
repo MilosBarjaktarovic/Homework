@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <section class="form-wrapper">
+    <form class="order-form" action="#" method="post">
+      <h2>Porudžbina</h2>
+
+      <label for="name">Ime i prezime:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Adresa:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="city">Odaberi grad:</label>
+      <select id="city" name="city" required>
+        <option value="">-- Odaberi grad --</option>
+        <option value="Beograd">Beograd</option>
+        <option value="Novi Sad">Novi Sad</option>
+        <option value="Niš">Niš</option>
+        <option value="Kragujevac">Kragujevac</option>
+      </select>
+
+      <p>Način plaćanja:</p>
+      <div class="radio-group">
+        <label><input type="radio" name="payment" value="kartica" required> Karticom</label>
+        <label><input type="radio" name="payment" value="kes"> Kešom</label>
+      </div>
+
+      <label class="checkbox">
+        <input type="checkbox" name="newsletter"> Želim da primam emailove sa ponudama
+      </label>
+
+      <button type="submit">Pošalji</button>
+    </form>
+  </section>
+
+</body>
+
+</html>
