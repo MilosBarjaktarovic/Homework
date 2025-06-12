@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 70px;
+
+}
+
+.hero-section {
+  background-color: #0d6efd;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+
+}
+
+button:hover {
+  background-color: white;
+  color: #0d6efd;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+section:nth-of-type(odd) {
+  background-color: #b9cbce;
+}
+
+section:nth-of-type(even) {
+  background-color: #7996e5;
+}
